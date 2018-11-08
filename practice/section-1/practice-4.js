@@ -1,5 +1,5 @@
 'use strict';
 
 function collectSameElements(collectionA, objectB) {
-  return 'Implement the practice require, and begin changing code in this row';
+  return  collectionA.filter(a => -1 !== objectB.value.indexOf(a.key)).map(x => x.key) ;
 }
