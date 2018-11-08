@@ -1,5 +1,11 @@
 'use strict';
 
 function createUpdatedCollection(collectionA, objectB) {
-  return 'Implement the practice require, and begin changing code in this row';
+  
+  objectB.value.forEach((BItem) => {
+    var foundIndex = collectionA.findIndex(x => x.key == BItem);
+    collectionA[foundIndex].count = collectionA[foundIndex].count - 1;
+  })
+  
+  return collectionA
 }
